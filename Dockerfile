@@ -1,8 +1,8 @@
 FROM quay.io/centos/centos:stream9-minimal
 
-RUN yum -y update && \
-    yum -y install httpd \
-    && yum clean all \
+RUN dnf -y update && \
+    dnf -y install httpd \
+    && dnf clean all \
     && rm -rf /var/cache/yum \
     && rm -rf /tmp/* /var/tmp/*
 
