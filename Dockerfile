@@ -1,4 +1,4 @@
-FROM quay.io/centos/centos:stream9-minimal
+FROM quay.io/centos/centos:stream9
 
 RUN dnf -y update && \
     dnf -y install httpd \
